@@ -1,0 +1,4 @@
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\BL\bin\Debug\BL.dll
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\BL\bin\Debug\BL.pdb
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\BL\obj\Debug\BL.dll
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\BL\obj\Debug\BL.pdb
