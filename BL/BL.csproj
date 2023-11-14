@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Accountings\" />
-    <Folder Include="Auth\" />
+    <Folder Include="Auths\" />
     <Folder Include="Companies\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
