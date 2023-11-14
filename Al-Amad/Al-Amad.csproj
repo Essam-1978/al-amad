@@ -75,9 +75,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="hr.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="hr.asmx.cs">
+      <DependentUpon>hr.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
