@@ -2,3 +2,4 @@ C:\Users\essam\Source\Repos\Essam-1978\al-amad\DataAcess\bin\Debug\DataAcess.dll
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\DataAcess\bin\Debug\DataAcess.pdb
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\DataAcess\obj\Debug\DataAcess.dll
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\DataAcess\obj\Debug\DataAcess.pdb
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\DataAcess\obj\Debug\DataAcess.csprojResolveAssemblyReference.cache

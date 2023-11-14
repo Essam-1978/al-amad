@@ -15,6 +15,5 @@ C:\Users\essam\Source\Repos\Essam-1978\al-amad\Al-Amad\bin\Al-Amad.dll
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\Al-Amad\bin\Al-Amad.pdb
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\Al-Amad\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\Al-Amad\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\essam\Source\Repos\Essam-1978\al-amad\Al-Amad\obj\Debug\Al-Amad.csprojResolveAssemblyReference.cache
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\Al-Amad\obj\Debug\Al-Amad.dll
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\Al-Amad\obj\Debug\Al-Amad.pdb
