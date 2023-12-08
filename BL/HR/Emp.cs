@@ -8,5 +8,6 @@ namespace BL.HR
 {
     class Emp
     {
+
     }
 }
