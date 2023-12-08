@@ -61,8 +61,6 @@
   <ItemGroup>
     <Build Include="employees.sql" />
     <Build Include="Departments.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="Database1.refactorlog" />
+    <Build Include="Aggregate1.sql" />
   </ItemGroup>
 </Project>
