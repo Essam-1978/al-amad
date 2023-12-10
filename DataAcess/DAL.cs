@@ -14,7 +14,8 @@ namespace DataAcess
         private SqlConnection con;
         public DAL()
         {
-            con = new SqlConnection(@"(localdb)\ProjectsV13;Initial Catalog=Database1_1;Integrated Security=True;Pooling=False;Connect Timeout=30");
+            //Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Al_Amad; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False
+            con = new SqlConnection(@"(localdb)\MSSQLLocalDB;Initial Catalog=Al_Amad;Integrated Security=True;Pooling=False;Connect Timeout=30");
 
         }
 

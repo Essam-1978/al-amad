@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[employees]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[employees].[Badge_Id] is being dropped, data loss could occur.
+
+** User actions
+     Table rebuild
+       [dbo].[employees] (Table)
+     Create
+       [dbo].[agreements] (Table)
+       [dbo].[Poa] (Table)
+
+** Supporting actions
+
+The column [dbo].[employees].[Badge_Id] is being dropped, data loss could occur.
+
