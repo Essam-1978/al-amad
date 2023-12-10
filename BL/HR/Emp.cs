@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BL.HR
+namespace BL
 {
-    class Emp
+    public class Emp
     {
         public int Id { set; get; }
         public string First_Name { set; get; }
