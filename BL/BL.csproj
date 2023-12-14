@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="HR\Dep.cs" />
     <Compile Include="HR\Emp.cs" />
+    <Compile Include="HR\Operation\HrOp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAcess\DataAcess.csproj">
+      <Project>{06e8d7ea-48c2-42b5-8962-4179e9202089}</Project>
+      <Name>DataAcess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

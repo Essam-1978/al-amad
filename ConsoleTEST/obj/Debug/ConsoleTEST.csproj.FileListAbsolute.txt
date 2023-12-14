@@ -1,0 +1,10 @@
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\bin\Debug\ConsoleTEST.exe.config
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\bin\Debug\ConsoleTEST.exe
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\bin\Debug\ConsoleTEST.pdb
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\bin\Debug\BL.dll
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\bin\Debug\DataAcess.dll
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\bin\Debug\BL.pdb
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\bin\Debug\DataAcess.pdb
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\obj\Debug\ConsoleTEST.csprojResolveAssemblyReference.cache
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\obj\Debug\ConsoleTEST.exe
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\ConsoleTEST\obj\Debug\ConsoleTEST.pdb

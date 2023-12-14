@@ -8,14 +8,15 @@ using System.Data.SqlClient;
 
 namespace DataAcess
 {
-    class DAL
+    public class DAL
     {
 
         private SqlConnection con;
         public DAL()
         {
+           // Server = ESSAM - LAPTOP - DE\SQLEXPRESS; Database = Store; Integrated Security = True
             //Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Al_Amad; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False
-            con = new SqlConnection(@"(localdb)\MSSQLLocalDB;Initial Catalog=Al_Amad;Integrated Security=True;Pooling=False;Connect Timeout=30");
+            con = new SqlConnection(@"Server=(localdb)\MSSQLLocalDB; Database = Al_Amad; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
 
         }
 
@@ -23,7 +24,10 @@ namespace DataAcess
         public void open()
         {
             if (con.State != ConnectionState.Open)
-            { con.Open(); }
+            {
+                con.Open();
+                 }
+           
         }
 
         public void close()
@@ -35,11 +39,12 @@ namespace DataAcess
 
 
 
-        public DataTable Select_Data(string StoredProc, SqlParameter[] param)
+        public DataTable Select_Data(string storedproc, SqlParameter[] param)
         {
             SqlCommand com = new SqlCommand();
             com.CommandType = CommandType.StoredProcedure;
-            com.CommandText = StoredProc;
+            com.CommandText = storedproc;
+            com.Connection = con;
             if (param != null)
             {
                 for (int i = 0; i < param.Length; i++)
@@ -56,14 +61,16 @@ namespace DataAcess
         }
 
 
-        public void Execute_Com(string StoredProc, SqlParameter[] param)
+        public void Execute_Com(string storedproc, SqlParameter[] param)
         {
             SqlCommand com = new SqlCommand();
             com.CommandType = CommandType.StoredProcedure;
-            com.CommandText = StoredProc;
+            com.CommandText = storedproc;
+            com.Connection = con;
             if (param != null)
             {
                 com.Parameters.AddRange(param);
+               
                 com.ExecuteNonQuery();
 
 
