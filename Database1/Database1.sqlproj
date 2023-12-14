@@ -66,6 +66,7 @@
     <Build Include="Poa.sql" />
     <Build Include="agreements.sql" />
     <Build Include="insert_cat.sql" />
+    <Build Include="all_deps.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database1.refactorlog" />

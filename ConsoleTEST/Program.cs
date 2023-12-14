@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using BL;
 using DataAcess;
+using System.Data.SqlClient;
 
 
 namespace ConsoleTEST
@@ -14,17 +15,62 @@ namespace ConsoleTEST
     {
         static void Main(string[] args)
         {
+            // this is first test we shall maek
+            // first write connection
+            // second write try catch finally to check conn
+            // in try open connection initialize reader, command, execute command in reader
+            // writeln data
 
-            //Dep comp = new Dep();
-            //comp.Name = "Open";
-            //comp.insert_department();
+            SqlConnection con = new SqlConnection(@"Server=(localdb)\MSSQLLocalDB;Database=Al_Amad;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
+            try
+            {
+                con.Open();
+                SqlDataReader rd = null;
+                SqlCommand com = new SqlCommand("select * from [dbo].[all_deps] ",con);
+                rd = com.ExecuteReader();
+
+                if (rd.HasRows)
+                {
+
+                
+                while (rd.Read())
+                {
+                        Dep dep = new Dep(rd);
+
+                    Console.WriteLine("{0} - {1}",rd["Dep_Id"].ToString(), rd["Dep_Name"].ToString());
+
+                }
+
+                }
+
+                else { Console.WriteLine("No DATA"); }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.ReadLine();
+            }
+            finally
+            {
+                Console.ReadLine();
+                con.Close();
+            }
+    
 
 
-            DataTable dt = new DataTable();
+
+
+
+
+
+
 
 
 
 
         }
+        
+
     }
 }

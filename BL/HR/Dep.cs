@@ -10,11 +10,36 @@ using System.Data;
 
 namespace BL
 {
-    public class Dep
+    public class Dep:BaseModel
     {
         public int Id { set; get; }
 
         public string Name { set; get; }
+
+        public Dep()
+        {
+
+        }
+
+        public Dep(SqlDataReader reader)
+        {
+            Datareader = reader;
+            Id = Convert.ToInt16(Datareader["Dep_Id"].ToString());
+            Name = Datareader["Dep_Name"].ToString();
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
         public List<Emp> Employees { set; get; }
 
