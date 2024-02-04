@@ -18,8 +18,8 @@ namespace BL
         public BaseModel(SqlDataReader reader)
         {
             Datareader = reader;
-            createdate = DateTime.Parse(Datareader["Create_Date"].ToString());
-            editdate = DateTime.Parse(Datareader["Edit_Date"].ToString());
+            //createdate = DateTime.Parse(Datareader["Create_Date"].ToString());
+            //editdate = DateTime.Parse(Datareader["Edit_Date"].ToString());
 
         }
 

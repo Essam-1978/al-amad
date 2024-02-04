@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Al-Amad\Al-Amad.csproj">
+      <Project>{5cc69142-b0e8-490f-9c37-10ea80e40e51}</Project>
+      <Name>Al-Amad</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BL\BL.csproj">
       <Project>{b07071b3-134d-4350-8ca4-89ab52e6a20b}</Project>
       <Name>BL</Name>
@@ -58,6 +62,13 @@
       <Project>{06e8d7ea-48c2-42b5-8962-4179e9202089}</Project>
       <Name>DataAcess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Database1\Database1.sqlproj">
+      <Project>{5a8083a9-f4e1-49db-a01b-3010c316ca52}</Project>
+      <Name>Database1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

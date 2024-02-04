@@ -43,13 +43,13 @@
     <Compile Include="BaseModel.cs" />
     <Compile Include="HR\Dep.cs" />
     <Compile Include="HR\Emp.cs" />
-    <Compile Include="HR\Operation\HrOp.cs" />
+    <Compile Include="HR\Operations\DepRep.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Accountings\" />
-    <Folder Include="Auths\" />
-    <Folder Include="Companies\" />
+    <Folder Include="Accountings\Operations\" />
+    <Folder Include="Auths\Operations\" />
+    <Folder Include="Companies\Operations\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
