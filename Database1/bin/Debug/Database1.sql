@@ -15,8 +15,8 @@ SET NUMERIC_ROUNDABORT OFF;
 GO
 :setvar DatabaseName "Database1_1"
 :setvar DefaultFilePrefix "Database1_1"
-:setvar DefaultDataPath "C:\Users\essam\AppData\Local\Microsoft\VisualStudio\SSDT\Al-Amad"
-:setvar DefaultLogPath "C:\Users\essam\AppData\Local\Microsoft\VisualStudio\SSDT\Al-Amad"
+:setvar DefaultDataPath "C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\SSDT\Al-Amad"
+:setvar DefaultLogPath "C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\SSDT\Al-Amad"
 
 GO
 :on error exit

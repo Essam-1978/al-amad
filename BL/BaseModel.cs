@@ -18,14 +18,16 @@ namespace BL
         public BaseModel(SqlDataReader reader)
         {
             Datareader = reader;
-            //createdate = DateTime.Parse(Datareader["Create_Date"].ToString());
-            //editdate = DateTime.Parse(Datareader["Edit_Date"].ToString());
+            createdate = DateTime.Parse(Datareader["Create_Date"].ToString());
+            editdate = DateTime.Parse(Datareader["Edit_Date"].ToString());
+            agentid =Convert.ToInt16(Datareader["Agent_Id"].ToString());
 
         }
 
         public SqlDataReader Datareader { get; set; }
         public DateTime createdate { get; set; }
         public DateTime editdate { get; set; }
+        public int agentid { get; set; }
 
     }
 }

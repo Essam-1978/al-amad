@@ -18,9 +18,9 @@ namespace Al_Amad
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public int cal(int a,int b)
         {
-            return "Hello World";
+            return a + b;
         }
     }
 }

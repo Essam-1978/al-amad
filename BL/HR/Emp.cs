@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BL
 {
-    public class Emp
+    public class Emp:BaseModel
     {
         public int Id { set; get; }
         public string First_Name { set; get; }

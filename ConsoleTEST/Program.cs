@@ -26,26 +26,29 @@ namespace ConsoleTEST
             // in try open connection initialize reader, command, execute command in reader
             // writeln data
 
-            //SqlConnection con = new SqlConnection(@"Server=(localdb)\MSSQLLocalDB;Database=Al_Amad;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
+
+
+            //SqlConnection con = new SqlConnection(@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Al-Amad;Integrated Security=True");
 
             //try
             //{
             //    con.Open();
             //    SqlDataReader rd = null;
-            //    SqlCommand com = new SqlCommand("select * from [dbo].[all_deps] ",con);
+            //    SqlCommand com = new SqlCommand("select * from [dbo].[all_deps] ", con);
             //    rd = com.ExecuteReader();
 
             //    if (rd.HasRows)
             //    {
 
 
-            //    while (rd.Read())
-            //    {
+            //        while (rd.Read())
+            //        {
             //            Dep dep = new Dep(rd);
 
-            //        Console.WriteLine("{0} - {1}",rd["Dep_Id"].ToString(), rd["Dep_Name"].ToString());
+            //            Console.WriteLine("{0} - {1}", rd["Dep_Id"].ToString(), rd["Dep_Name"].ToString());
 
-            //    }
+            //        }
 
             //    }
 
@@ -65,9 +68,9 @@ namespace ConsoleTEST
 
 
 
-            DepRep tt = new DepRep();
-            DataTable ee = new DataTable();
-            ee=tt.Get_Depatrments();
+            //DepRep tt = new DepRep();
+            //DataTable ee = new DataTable();
+            //ee=tt.Get_Depatrments();
 
             //List<Dep> rr = tt.getitems();
             //foreach (Dep f in rr)
@@ -75,9 +78,32 @@ namespace ConsoleTEST
             //    Console.WriteLine(f.Id);
             //}
 
-            
-           
-            
+
+
+
+
+            DepRep DepRep = new DepRep();
+            List<Dep> items = DepRep.get_dep();
+            foreach (Dep item in items)
+            {
+                
+                Console.WriteLine("{0}{1}{2}{3}", item.agentid, item.Id, item.Name, item.createdate);
+            }
+
+
+
+
+            Console.WriteLine(DepRep.get_dep_by_id(1).Name.ToString());
+            Console.ReadLine();
+
+            Dep dep2 = new Dep();
+            dep2.Name = "Cryster";
+            dep2.createdate = Convert.ToDateTime("02/02/2023");
+            dep2.editdate = Convert.ToDateTime("01/02/2032");
+            dep2.agentid = 120;
+            //DepRep.add_dep(dep2);
+            DepRep.update_dep(dep2, 2);
+
 
 
 
@@ -85,7 +111,7 @@ namespace ConsoleTEST
 
 
         }
-        
+
 
     }
 }
