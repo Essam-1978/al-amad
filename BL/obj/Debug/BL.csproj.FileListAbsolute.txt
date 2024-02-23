@@ -5,3 +5,10 @@ C:\Users\essam\Source\Repos\Essam-1978\al-amad\BL\obj\Debug\BL.pdb
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\BL\bin\Debug\DataAcess.dll
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\BL\bin\Debug\DataAcess.pdb
+C:\Users\Administrator\Source\Repos\al-amad\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\al-amad\BL\obj\Debug\BL.dll
+C:\Users\Administrator\Source\Repos\al-amad\BL\obj\Debug\BL.pdb
+C:\Users\Administrator\Source\Repos\al-amad\BL\bin\Debug\BL.dll
+C:\Users\Administrator\Source\Repos\al-amad\BL\bin\Debug\BL.pdb
+C:\Users\Administrator\Source\Repos\al-amad\BL\bin\Debug\DataAcess.dll
+C:\Users\Administrator\Source\Repos\al-amad\BL\bin\Debug\DataAcess.pdb

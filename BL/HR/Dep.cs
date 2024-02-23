@@ -21,10 +21,10 @@ namespace BL
 
         }
 
-        public Dep(SqlDataReader reader)
+        public Dep(SqlDataReader reader):base(reader)
         {
             Datareader = reader;
-           //Id = Convert.ToInt32(Datareader["Dep_Id"].ToString());
+            Id = Convert.ToInt32(Datareader["Dep_Id"].ToString());
             Name = Datareader["Dep_Name"].ToString();
 
         }

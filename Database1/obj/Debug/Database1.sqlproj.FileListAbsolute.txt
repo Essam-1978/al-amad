@@ -3,3 +3,8 @@ C:\Users\essam\Source\Repos\Essam-1978\al-amad\Database1\bin\Debug\Database1.dll
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\Database1\bin\Debug\Database1.pdb
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\Database1\obj\Debug\Database1.dll
 C:\Users\essam\Source\Repos\Essam-1978\al-amad\Database1\obj\Debug\Database1.pdb
+C:\Users\Administrator\Source\Repos\al-amad\Database1\bin\Debug\Database1.dacpac
+C:\Users\Administrator\Source\Repos\al-amad\Database1\bin\Debug\Database1.dll
+C:\Users\Administrator\Source\Repos\al-amad\Database1\bin\Debug\Database1.pdb
+C:\Users\Administrator\Source\Repos\al-amad\Database1\obj\Debug\Database1.dll
+C:\Users\Administrator\Source\Repos\al-amad\Database1\obj\Debug\Database1.pdb

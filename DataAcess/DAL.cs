@@ -16,7 +16,7 @@ namespace DataAcess
         {
            // Server = ESSAM - LAPTOP - DE\SQLEXPRESS; Database = Store; Integrated Security = True
             //Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Al_Amad; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False
-            con = new SqlConnection(@"Server=(localdb)\MSSQLLocalDB; Database = Al_Amad; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
+            con = new SqlConnection(@"Server=(localdb)\MSSQLLocalDB; Database = Al-Amad; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
 
         }
 
