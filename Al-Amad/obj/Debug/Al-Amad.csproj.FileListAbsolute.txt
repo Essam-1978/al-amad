@@ -37,3 +37,4 @@ C:\Users\Administrator\Source\Repos\al-amad\Al-Amad\bin\Microsoft.CodeDom.Provid
 C:\Users\Administrator\Source\Repos\al-amad\Al-Amad\obj\Debug\Al-Amad.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Source\Repos\al-amad\Al-Amad\obj\Debug\Al-Amad.dll
 C:\Users\Administrator\Source\Repos\al-amad\Al-Amad\obj\Debug\Al-Amad.pdb
+C:\Users\essam\Source\Repos\Essam-1978\al-amad\Al-Amad\obj\Debug\Al-Amad.csprojResolveAssemblyReference.cache

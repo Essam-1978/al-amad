@@ -15,8 +15,8 @@ SET NUMERIC_ROUNDABORT OFF;
 GO
 :setvar DatabaseName "Database1_1"
 :setvar DefaultFilePrefix "Database1_1"
-:setvar DefaultDataPath "C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\SSDT\Al-Amad"
-:setvar DefaultLogPath "C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\SSDT\Al-Amad"
+:setvar DefaultDataPath "C:\Users\essam\AppData\Local\Microsoft\VisualStudio\SSDT\Al-Amad"
+:setvar DefaultLogPath "C:\Users\essam\AppData\Local\Microsoft\VisualStudio\SSDT\Al-Amad"
 
 GO
 :on error exit
@@ -37,6 +37,49 @@ IF N'$(__IsSqlCmdEnabled)' NOT LIKE N'True'
 
 GO
 USE [$(DatabaseName)];
+
+
+GO
+/*
+The column [dbo].[Departments].[Agent_Id] on table [dbo].[Departments] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+
+The column Create_Date on table [dbo].[Departments] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+
+The column Edit_Date on table [dbo].[Departments] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+*/
+
+IF EXISTS (select top 1 1 from [dbo].[Departments])
+    RAISERROR (N'Rows were detected. The schema update is terminating because data loss might occur.', 16, 127) WITH NOWAIT
+
+GO
+PRINT N'Altering [dbo].[Departments]...';
+
+
+GO
+ALTER TABLE [dbo].[Departments] ALTER COLUMN [Create_Date] DATE NOT NULL;
+
+ALTER TABLE [dbo].[Departments] ALTER COLUMN [Edit_Date] DATE NOT NULL;
+
+
+GO
+ALTER TABLE [dbo].[Departments]
+    ADD [Agent_Id] INT NOT NULL;
+
+
+GO
+PRINT N'Refreshing [dbo].[all_deps]...';
+
+
+GO
+EXECUTE sp_refreshsqlmodule N'[dbo].[all_deps]';
+
+
+GO
+PRINT N'Refreshing [dbo].[insert_cat]...';
+
+
+GO
+EXECUTE sp_refreshsqlmodule N'[dbo].[insert_cat]';
 
 
 GO
