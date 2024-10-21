@@ -1,0 +1,6 @@
+@media (min-width: 576px) {
+  .clean-navbar.fixed-top + .page {
+    padding-top: 5rem;
+  }
+}
+

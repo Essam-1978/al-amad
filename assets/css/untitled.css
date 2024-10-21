@@ -1,0 +1,153 @@
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+  color: rgba(0,0,0,.9);
+}
+
+@media (min-width: 768px) {
+  .clean-navbar .navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: .8rem;
+    text-transform: uppercase;
+    position: relative;
+    /*top: 58px;*/
+    left: 20px;
+  }
+}
+
+.clean-navbar .navbar-nav .nav-item:hover {
+  background-color: rgb(189,222,71);
+}
+
+.fixed-top {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width: 576px) {
+  .clean-navbar.fixed-top + .page {
+    /*padding-top: 5rem;*/
+  }
+}
+
+h3 {
+  color: darkred;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: darkred;
+  text-align: center;
+}
+
+.clean-block .block-heading p {
+  /*text-align: center;*/
+  /*max-width: 420px;*/
+  /*margin: auto;*/
+  /*opacity: .7;*/
+}
+
+.par {
+  width: 100%;
+}
+
+.fa {
+  font-size: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+, buttonstyle {
+}
+
+button {
+  color: #cc6633;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  background-color: black;
+  width: 240px;
+  font-size: larger;
+}
+
+.buttonstyle {
+  color: #cc6633;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  background-color: black;
+  width: 240px;
+  font-size: larger;
+}
+
+.buttonstyle:hover {
+  background-color: #cc6633;
+}
+
+.buttonstyle a {
+  color: white;
+}
+
+.fa-regular {
+  font-size: x-large;
+}
+
+p {
+}
+
+@media (min-width: 768px) {
+  #nav {
+    display: flex;
+     
+    background: var(--bs-pink);
+    flex-direction: row;
+    background-color:#6e321c;
+   justify-content:space-between;
+  }
+}
+
+@media (min-width: 576px) {
+  #nav {
+     
+    background: #6e321c;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+background-color:#6e321c;
+  }
+}
+
+@media (min-width: 300px) {
+  #nav {
+ display: flex;
+    flex-direction: column;
+background-color:#6e321c;
+align-items: center;
+  }
+}
+
+
+
+@media (min-width: 200px) {
+  #nav {
+ display: flex;
+    flex-direction: column;
+background-color:#6e321c;
+align-items: center;
+  }
+}
+
+
+
+
+@media (min-width: 992px) {
+  #nav {
+    flex-direction: row;
+    width: 100%;
+background-color:#6e321c;
+
+  }
+}
+
